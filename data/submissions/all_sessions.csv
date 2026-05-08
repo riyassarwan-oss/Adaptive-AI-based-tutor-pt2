@@ -1,0 +1,35 @@
+timestamp,student,topic,difficulty_before,difficulty_after,question_id,correct,score_after,total_answered_session,time_taken_sec,hint_used,session_id,concept,prerequisites,mastery_before,mastery_after,concept_action,response_type,rag_feedback
+2026-05-08T09:09:19,Player,General Science,Easy,Easy,102,0,0,1,22.4,0,player_1778211536,Flower Structure,Plant Reproduction,50,38,Remediate prerequisite: Plant Reproduction,Thoughtful attempt,"
+The correct answer is **sepals**.
+
+Explanation:
+Sepals protect a developing flower while it is still a bud. They often cover the bud and help shield it before the flower opens.
+
+Recommended revision:
+Plant Reproduction
+"
+2026-05-08T09:09:25,Player,General Science,Easy,Easy,139,1,12,2,3.2,0,player_1778211536,Boiling and Freezing Points,"Water, States of Matter",50,60,Advance / increase difficulty,Calculated attempt,
+2026-05-08T09:09:34,Player,General Science,Easy,Easy,110,1,26,3,5.8,0,player_1778211536,Homo sapiens,"Classification, Human Evolution",38,48,Advance / increase difficulty,Calculated attempt,
+2026-05-08T09:09:49,Player,General Science,Easy,Medium,82,1,42,4,10.6,0,player_1778211536,Carboxylic Acids,"Acids, Ionization",60,70,Advance / increase difficulty,Thoughtful attempt,
+2026-05-08T09:09:57,Player,General Science,Medium,Hard,86,1,60,5,5.4,0,player_1778211536,Alkenes,"Hydrocarbons, Covalent Bonds",70,80,Advance / increase difficulty,Calculated attempt,
+2026-05-08T09:10:03,Player,General Science,Hard,Hard,130,1,80,6,3.5,0,player_1778211536,Cell Membrane,"Lipids, Diffusion",48,58,Advance / increase difficulty,Calculated attempt,
+2026-05-08T09:10:14,Player,General Science,Hard,Hard,92,0,78,7,9.1,0,player_1778211536,Alkanes,"Hydrocarbons, Chemical Formulas",80,68,Remediate prerequisite: Hydrocarbons,Thoughtful attempt,"
+The correct answer is **no limit**.
+
+Explanation:
+Noncyclic alkanes follow the formula CnH2n+2. There is no fixed limit to the number of carbon atoms an alkane can contain.
+
+Recommended revision:
+Hydrocarbons, Chemical Formulas
+"
+2026-05-08T09:10:21,Player,General Science,Hard,Hard,149,1,90,8,3.7,0,player_1778211536,Energy Transfer,"Heat, Work",50,60,Advance / increase difficulty,Calculated attempt,
+2026-05-08T09:10:32,Player,General Science,Hard,Medium,97,0,88,9,7.3,0,player_1778211536,Diatoms,"Protists, Photosynthesis",58,46,Remediate prerequisite: Protists,Calculated attempt,"
+The correct answer is **marine plankton**.
+
+Explanation:
+Diatoms are unicellular photosynthetic protists found in freshwater and marine plankton. Their glassy cell walls contain silicon dioxide.
+
+Recommended revision:
+Protists, Photosynthesis
+"
+2026-05-08T09:10:38,Player,General Science,Medium,Medium,23,1,100,10,3.7,0,player_1778211536,Dead Zones,"Water Pollution, Fertilizers",50,60,Advance / increase difficulty,Calculated attempt,

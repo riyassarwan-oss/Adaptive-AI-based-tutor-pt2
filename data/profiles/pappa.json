@@ -1,0 +1,14 @@
+{
+  "name": "PAPPA",
+  "created_at": 1760203065.8388107,
+  "last_seen": 1760203311.023135,
+  "cumulative": {
+    "total": 10,
+    "correct": 8,
+    "score": 102,
+    "streak_best": 4,
+    "sessions": 1
+  },
+  "last_topic": "General Science",
+  "last_difficulty": "Hard"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "general",
+  "created_at": 1760086586.4070814,
+  "last_seen": 1760086586.5096893,
+  "cumulative": {
+    "total": 0,
+    "correct": 0,
+    "score": 0,
+    "streak_best": 0,
+    "sessions": 0
+  },
+  "last_topic": null,
+  "last_difficulty": "Easy"
+}
