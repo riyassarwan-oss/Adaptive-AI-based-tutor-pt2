@@ -915,6 +915,56 @@ else:
     st.dataframe(diff_flow, use_container_width=True)
 
     # =========================================================
+    # STUDENT MASTERY PROGRESS
+    # =========================================================
+    
+    st.markdown("### 📈 Student Mastery Progress")
+    
+    progress = (
+        df.groupby(["student", "session_id"], as_index=False)
+        .agg(
+            SessionAccuracy=("correct", "mean"),
+            Questions=("correct", "count"),
+            LastActivity=("timestamp", "max")
+        )
+    )
+    
+    progress["SessionAccuracy"] = progress["SessionAccuracy"] * 100
+    progress = progress.sort_values(["student", "LastActivity"])
+    
+    progress_rows = []
+    
+    for student, g in progress.groupby("student"):
+        first_acc = round(g.iloc[0]["SessionAccuracy"], 1)
+        latest_acc = round(g.iloc[-1]["SessionAccuracy"], 1)
+        change = round(latest_acc - first_acc, 1)
+    
+        if change >= 10:
+            status = "Improving"
+        elif change <= -10:
+            status = "Declining"
+        else:
+            status = "Stable"
+    
+        progress_rows.append({
+            "Student": student,
+            "First Mastery %": first_acc,
+            "Latest Mastery %": latest_acc,
+            "Change %": change,
+            "Status": status,
+            "Sessions": g["session_id"].nunique()
+        })
+    
+    progress_table = pd.DataFrame(progress_rows)
+    
+    if progress_table.empty:
+        st.info("Progress trend will appear after students complete sessions.")
+    else:
+        progress_table = progress_table.sort_values("Change %", ascending=False).reset_index(drop=True)
+        progress_table.index = progress_table.index + 1
+        st.dataframe(progress_table, use_container_width=True)
+
+    # =========================================================
     # RAG TUTOR FEEDBACK
     # =========================================================
 
